@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Courgette&display=swap');
+
+*{
+       box-sizing: border-box;
+}
+
+body{
+       background-image: repeating-conic-gradient(#f00 ,#ff0 ,#0f0 ,#0ff , #00f ,#f0f ,#f00);
+       color: #fff;
+       height: 100vh;
+       font-family: 'Courgette',cursive;
+       line-height: 1.6;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       margin: 0;
+}
+.container{
+       background-color: #805021;
+       padding: 0 30px;
+       width: 400px;
+       border-radius: 5px;
+       display: none;
+}
+
+.container h1{
+       font-family: 'Aladin',cursive;
+       text-align: center;
+       margin-bottom: 30px;
+       letter-spacing: 1.5px;
+       color: rgb(255, 0, 0);
+}
+
+.container a{
+       text-decoration: none;
+       color: #0ff;
+}
+
+.btn{
+       font-family: inherit;
+       width: 100%;
+       border: 0;
+       background: #0ff;
+       color: #333;
+       padding: 7px 20px;
+       border-radius: 5px;
+       cursor: pointer;
+       font-size: inherit;
+}
+
+.btn:hover{
+       background-color: #0ed;
+}
+
+.btn:active{
+       transform: scale(0.99);
+}
+
+.form-control{
+       margin: 20px 0 40px;
+       position: relative;
+       color: #fff;
+}
+
+.form-control input{
+       font-size: inherit;
+       font-family: inherit;
+       width: 100%;
+       padding: 10px 0;
+       display: block;
+       background: transparent;
+       border: 0;
+       border-bottom: 2px solid white;
+       color: #fff;
+}
+
+.form-control input:focus ,
+.form-control input:valid{
+       outline: none;
+       border-bottom-color: #0ff;
+}
+
+.form-control label{
+       position: absolute;
+       top: 10px;
+       left: 0;
+}
+
+.form-control label span{
+       font-size: 18px;
+       display: inline-block;
+       transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus + label span,
+.form-control input:valid + .form-control label span{
+       color: #0ff;
+       transform: translateY(-30px);
+}
+
+.current{
+       display: block;
+}
+
+/* .container.close {
+       display: none;
+       transition: 0.8s ease-in-out;
+  }  
+
+h1.end {
+       position: relative;
+       font-family: "Courgette", cursive;
+       opacity: 0;
+       transition: all 0.8s ease-in-out;
+     } */
